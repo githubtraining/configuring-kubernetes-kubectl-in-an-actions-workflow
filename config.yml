@@ -7,7 +7,7 @@ description: >-
   live Kubernetes Cluster.
 template:
   repo: configuring-kubernetes-kubectl-in-an-actions-workflow-template
-  name: configuring-kubernetes-kubectl-in-an-actions-workflow-lab
+  name: kubectl-in-actions-workflow-lab
 before:
   - type: createIssue
     title: Welcome!
