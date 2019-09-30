@@ -14,7 +14,7 @@ before:
     body: welcome.md
 steps:
   - title: Introduction and Review of Containerization
-    description: Reviewing the architecture and Containerizing an Application
+    description: Reviewing the architecture and containerizing an Application
     event: issues.assigned
     link: '{{ repoUrl }}'
     actions:
