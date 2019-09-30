@@ -1,18 +1,26 @@
 title: Configuring Kubernetes kubectl in an Actions Workflow
-tagline: A brand new course on Learning Lab
+tagline: A Course On How To Configure kubectl for Use in a Workflow
 description: >-
-  This course guides the student through a step-by-step process to configure the
-  Kubernetes kubectl command in a GitHub Actions Workflow.
+  This brief course guides the student through the steps required to configure
+  the Kubernetes kubectl command for use in an Actions Workflow. This lab then
+  enables the student to use kubectl to deploy containerized applications to a
+  live Kubernetes Cluster.
 template:
   repo: configuring-kubernetes-kubectl-in-an-actions-workflow-template
-  name: configuring-kubernetes-kubectl-in-an-actions-workflow
+  name: configuring-kubernetes-kubectl-in-an-actions-workflow-lab
 before:
   - type: createIssue
     title: Welcome!
-    body: new-issue.md
+    body: welcome.md
 steps:
-  - title: First step
-    description: The first step in your course
+  - title: Introduction and Review of Containerization
+    description: Reviewing the architecture and Containerizing an Application
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
+  - title: Encrypting the KUBECONFIG file
+    description: How to use GPG to encrypt a Kubernetes Config File
     event: issues.assigned
     link: '{{ repoUrl }}'
     actions:
